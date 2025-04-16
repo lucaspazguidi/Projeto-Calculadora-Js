@@ -1,4 +1,6 @@
-
+body{
+    background-image: linear-gradient(red,black);
+}
 h1{
     text-align: center;
   }
