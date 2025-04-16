@@ -1,64 +1,94 @@
-body{
-    background-image: linear-gradient(red,black);
+body {
+  background: linear-gradient(to right, red, black);
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;
 }
-h1{
-    text-align: center;
-  }
-  #visor {
-      font-size: 32px;
-      margin-bottom: 10px;
-      padding: 10px;
-      border: 1px solid #000;
-      width: 250px;
-      height: 40px;
-      margin: auto;
-      padding: 3px;
-    }
-  
-    .tecla {
-      font-size: 24px
-      ;
-      padding: 10px;
-      margin: 5px;
-      width: 50px;
-    }
-  section{
-    display: flex;
-    flex-direction: column;
-  }
-  .linha{
-    flex-direction: row;
-    justify-content: center;
-  }
-  .operador{
-    font-size: 24px;
-    padding: 10px;
-    margin: 5px;
-    width: 50px;
-  }
-  #igual{
-    font-size: 24px;
-    padding: 10px;
-    margin: 5px;
-    width: 50px;
-  }
-  #clean{
-    font-size: 24px;
-    padding: 10px;
-    margin: 5px;
-    width: 50px;
-  }
-  #igual-grande{
-    width: 250px;
-    margin: auto;
-  }
-  .igual-g{
-    height: 50px;
-    width: 100%;
-  }
-  .apagar{
-    font-size: 24px;
-    padding: 10px;
-    margin: 5px;
-    width: 50px;
-  }
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#visor {
+  font-size: 32px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #333;
+  width: 260px;
+  height: 50px;
+  margin: auto;
+  background-color: #fff;
+  color: #000;
+  text-align: right;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.tecla, .operador, #igual, #clean, .apagar {
+  font-size: 24px;
+  padding: 15px;
+  margin: 5px;
+  width: 60px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px #2d7032;
+  transition: 0.2s;
+}
+
+.tecla:hover, .operador:hover, #igual:hover, #clean:hover, .apagar:hover {
+  background-color: #45a049;
+}
+
+.tecla:active, .operador:active, #igual:active, #clean:active, .apagar:active {
+  box-shadow: 0 2px #2d7032;
+  transform: translateY(2px);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#igual-grande {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.igual-g {
+  height: 50px;
+  flex: 1;
+  font-size: 24px;
+  padding: 15px;
+  margin: 5px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px #922b21;
+  transition: 0.2s;
+}
+
+.igual-g:hover {
+  background-color: #e53935;
+}
+
+.igual-g:active {
+  box-shadow: 0 2px #922b21;
+  transform: translateY(2px);
+}
