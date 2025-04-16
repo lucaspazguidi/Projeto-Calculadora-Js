@@ -1,0 +1,61 @@
+
+h1{
+    text-align: center;
+  }
+  #visor {
+      font-size: 32px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #000;
+      width: 250px;
+      height: 40px;
+      margin: auto;
+    }
+  
+    .tecla {
+      font-size: 24px
+      ;
+      padding: 10px;
+      margin: 5px;
+      width: 50px;
+    }
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  .linha{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .operador{
+    font-size: 24px;
+    padding: 10px;
+    margin: 5px;
+    width: 50px;
+  }
+  #igual{
+    font-size: 24px;
+    padding: 10px;
+    margin: 5px;
+    width: 50px;
+  }
+  #clean{
+    font-size: 24px;
+    padding: 10px;
+    margin: 5px;
+    width: 50px;
+  }
+  #igual-grande{
+    width: 250px;
+    margin: auto;
+  }
+  .igual-g{
+    height: 50px;
+    width: 100%;
+  }
+  .apagar{
+    font-size: 24px;
+    padding: 10px;
+    margin: 5px;
+    width: 50px;
+  }
