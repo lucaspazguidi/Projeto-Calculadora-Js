@@ -1,10 +1,64 @@
 /* Fundo geral */
 body {
-  background: linear-gradient(to right, red, black);
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
   font-family: Arial, sans-serif;
   color: white;
   margin: 0;
   padding: 20px;
+}
+
+/* Modo Dark */
+body.dark {
+  background: linear-gradient(to right, #111, #333);
+  color: white;
+}
+body.dark header{
+  color: white;
+}
+body.dark .calculadora {
+  background-color: #111;
+  border-color: #777;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark #visor {
+  background: linear-gradient(to bottom, #333, #111);
+  color: #fff;
+  border: 3px inset #555;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.1),
+              inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .tecla,
+body.dark .operador,
+body.dark #clean,
+body.dark .apagar {
+  background-color: #555;
+  box-shadow: 0 4px #222;
+}
+
+body.dark .tecla:hover,
+body.dark .operador:hover,
+body.dark #clean:hover,
+body.dark .apagar:hover {
+  background-color: #666;
+}
+
+body.dark #igual {
+  background-color: #b71c1c;
+  box-shadow: 0 4px #7f0000;
+}
+body.dark #alterar-tema{
+  background-color: black;
+  color: white;
+}
+body.dark #alterar-tema:hover{
+  background-color: white;
+  color: #111;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+body.dark #igual:hover {
+  background-color: #c62828;
 }
 
 /* Cabeçalho */
@@ -12,7 +66,24 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
 }
-
+header{
+  color: black;
+}
+#alterar-tema{
+  font-size: 20px;
+  border-radius: 40px;
+  width: 120px;
+  height: 60px;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+#alterar-tema:hover{
+  background-color: #cfdef3;
+  color: black;
+  transition: color 0.2s ease, background-color 0.5s ease;
+}
 /* Corpo da calculadora */
 .calculadora {
   background-color: #222;

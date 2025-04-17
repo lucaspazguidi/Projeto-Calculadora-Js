@@ -4,6 +4,7 @@ const operadores = document.querySelectorAll(".operador")
 const igual = document.getElementById("igual")
 const limpar = document.getElementById("clean")
 const apagar = document.getElementsByClassName("apagar")
+const tema = document.getElementById("alterar-tema")
 let expressao = ""
 
 for (let i = 0; i < botoes.length; i++) {
@@ -42,6 +43,15 @@ apagar[0].addEventListener("click", function(){
     expressao = expressao.slice(0,-1);
     visor.innerText = (expressao)
     ajustarFonte()
+})
+tema.addEventListener("click", function(){
+    document.body.classList.toggle("dark")
+    if(document.body.classList == "dark"){
+        tema.innerText = "Tema claro"
+    }
+    else{
+        tema.innerText = "Tema escuro"
+    }
 })
 function ajustarFonte() {
     const texto = visor.innerText;
