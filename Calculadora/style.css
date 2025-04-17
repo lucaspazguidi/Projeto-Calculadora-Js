@@ -201,3 +201,12 @@ section {
   width: 100%;
   max-width: 260px;
 }
+
+@media (max-width: 400px) {
+  .calculadora {
+    transform: scale(0.9);
+  }
+  #visor {
+    font-size: 28px;
+  }
+}
