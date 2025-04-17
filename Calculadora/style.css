@@ -1,6 +1,6 @@
 /* Corpo geral */
 body {
-  background: #e0eafc; /* Fundo claro inicial (sólido para permitir a transição) */
+  background: #d2e0f8; /* Fundo claro inicial (sólido para permitir a transição) */
   color: white;
   margin: 0;
   padding: 20px;
@@ -14,7 +14,7 @@ body.dark {
   transition: color 1s ease, background-color 0.5s ease;
 }
 
-body.dark header {
+body.dark h1 {
   color: white;
 }
 
@@ -55,6 +55,7 @@ body.dark #igual {
 body.dark #alterar-tema {
   background-color: #cfdef3;
   color: #111;
+
 }
 
 body.dark #alterar-tema:hover {
@@ -70,7 +71,8 @@ body.dark #igual:hover {
 /* Cabeçalho */
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 80px 0 20px 0; /* margem superior aumentada */
+  color: black;
 }
 
 header {
@@ -78,11 +80,14 @@ header {
 }
 
 #alterar-tema {
+  display: block;
+  margin: 40px auto;
   font-size: 20px;
   border-radius: 30px;
   width: 120px;
   height: 60px;
   background-color: #111;
+  margin-bottom: 60px;
   color: white;
   cursor: pointer;
   transition: background-color 0.5s ease, color 0.5s ease;
