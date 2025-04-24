@@ -1,0 +1,212 @@
+/* Corpo geral */
+body {
+  background: #d2e0f8; /* Fundo claro inicial (sólido para permitir a transição) */
+  color: white;
+  margin: 0;
+  padding: 20px;
+  transition: color 1s ease, background-color 0.5s ease;
+}
+
+/* Modo Dark */
+body.dark {
+  background: #111; /* Cor sólida inicial para o modo escuro */
+  color: white;
+  transition: color 1s ease, background-color 0.5s ease;
+}
+
+body.dark h1 {
+  color: white;
+}
+
+body.dark .calculadora {
+  background-color: #d1cece;
+  border-color: #777;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark #visor {
+  background: linear-gradient(to bottom, #333, #111);
+  color: #fff;
+  border: 3px inset #555;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.1),
+              inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .tecla,
+body.dark .operador,
+body.dark #clean,
+body.dark .apagar {
+  background-color: #555;
+  box-shadow: 0 4px #222;
+}
+
+body.dark .tecla:hover,
+body.dark .operador:hover,
+body.dark #clean:hover,
+body.dark .apagar:hover {
+  background-color: #666;
+}
+
+body.dark #igual {
+  background-color: #b71c1c;
+  box-shadow: 0 4px #7f0000;
+}
+
+body.dark #alterar-tema {
+  background-color: #cfdef3;
+  color: #111;
+
+}
+
+body.dark #alterar-tema:hover {
+  background-color: rgb(52, 54, 54);
+  color: white;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark #igual:hover {
+  background-color: #c62828;
+}
+
+/* Cabeçalho */
+h1 {
+  text-align: center;
+  margin: 80px 0 20px 0; /* margem superior aumentada */
+  color: black;
+}
+
+header {
+  color: black;
+}
+
+#alterar-tema {
+  display: block;
+  margin: 40px auto;
+  font-size: 20px;
+  border-radius: 30px;
+  width: 120px;
+  height: 60px;
+  background-color: #111;
+  margin-bottom: 60px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#alterar-tema:hover {
+  background-color: #cfdef3;
+  color: black;
+  transition: color 0.2s ease, background-color 0.5s ease;
+}
+
+/* Corpo da calculadora */
+.calculadora {
+  background-color: #222;
+  border: 4px solid #555;
+  border-radius: 20px;
+  padding: 20px;
+  width: max-content;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Visor digital */
+#visor {
+  font-size: 36px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px 20px;
+  border: 3px inset #ccc;
+  border-radius: 10px;
+  width: 260px;
+  height: 60px;
+  margin: 0 auto 20px auto;
+  background: linear-gradient(to bottom, #e0e0e0, #bbb);
+  color: #111;
+  text-align: right;
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.6),
+              inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Área dos botões */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 260px;
+}
+
+/* Estilo geral dos botões */
+.tecla, .operador, #clean, .apagar, #igual {
+  font-size: 24px;
+  padding: 15px;
+  margin: 5px;
+  width: 60px;
+  height: 60px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px #2d7032;
+  transition: 0.2s;
+}
+
+.tecla:hover, .operador:hover, #clean:hover, .apagar:hover, #igual:hover {
+  background-color: #45a049;
+}
+
+.tecla:active, .operador:active, #clean:active, .apagar:active, #igual:active {
+  box-shadow: 0 2px #2d7032;
+  transform: translateY(2px);
+}
+
+/* Botão de igual grande */
+#igual {
+  background-color: #f44336;
+  box-shadow: 0 4px #922b21;
+  flex: 3;
+  height: 60px;
+}
+
+#igual:hover {
+  background-color: #e53935;
+}
+
+#igual:active {
+  box-shadow: 0 2px #922b21;
+  transform: translateY(2px);
+}
+
+/* Botão de apagar */
+.apagar {
+  flex: 1;
+}
+
+/* Linha final alinhada */
+.linha-final {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.linha-final .linha {
+  display: flex;
+  width: 100%;
+  max-width: 260px;
+}
+
+@media (max-width: 400px) {
+  .calculadora {
+    transform: scale(0.9);
+  }
+  #visor {
+    font-size: 28px;
+  }
+}

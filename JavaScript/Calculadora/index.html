@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <button id="alterar-tema">Tema escuro</button>
+        <div class="calculadora">
+            <p id="visor">0</p>
+            <section>
+                <section class="linha">
+                    <button class="tecla" data-num="7">7</button>
+                    <button class="tecla" data-num="8">8</button>
+                    <button class="tecla" data-num="9">9</button>
+                    <button class="operador" data-num="+">+</button>
+                </section>
+                <section  class="linha">
+                    <button class="tecla" data-num="4">4</button>
+                    <button class="tecla" data-num="5">5</button>
+                    <button class="tecla" data-num="6">6</button>
+                    <button class="operador" data-num="-">-</button>
+                </section>
+                <section class="linha">
+                    <button class="tecla" data-num="1">1</button>
+                    <button class="tecla" data-num="2">2</button>
+                    <button class="tecla" data-num="3">3</button>
+                    <button class="operador" data-num="/">:</button>
+                </section>
+                <section class="linha">
+                    <button id="clean">C</button>
+                    <button class="tecla" data-num="0">0</button>
+                    <button class="operador" data-num=".">.</button>
+                    <button class="operador" data-num="*">*</button>
+                </section>
+                <div class="linha-final">
+                    <section class="linha">
+                        <button class="apagar" data-num="apagar">⌫</button>
+                        <button   class="igual-g" id="igual" data-num="=">=</button>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <div id="meunome">
+            <h1>
+                Calculadora JavaScript
+                <p>feita por: Lucas Paz Guidi</p>
+            </h1>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
