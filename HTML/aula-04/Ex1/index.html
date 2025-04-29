@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .sessao{
+            scroll-margin-top: 100px ;
+        }
+        .totem {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .totem img {
+            width: 350px;
+            height: 230px;
+            display: block;
+            margin: 0 auto 10px auto;
+            border-radius: 8px; /* opcional: bordas arredondadas */
+        }
+
+        article {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        article p {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: cadetblue;
+            transition: color 0.2s ease;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        #line{
+            display: flex;
+            justify-content: space-around;
+        }
+        #home{
+            text-align: center;
+        }
+        header{
+            text-align: center;
+        }
+    </style>
+    
+    <header>
+        <section id="line">
+            <div id="logo">
+                <img src="#" alt="imagem logo">
+            </div>
+            <h1>Hipermercado IOS</h1>
+            <button type="button">
+                <a href="#atendimento">Contate-nos</a>
+            </button>
+        </section>
+        <h2>Aqui voce encontra tudo mais barato!!</h2>
+        <nav>
+            <ul>
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#padaria">
+                    <li>Padaria</li>
+                </a>
+                <a href="#açougue">
+                    <li>Açougue</li>
+                </a>
+                <a href="#hortifruti">
+                    <li>Hortigruti</li>
+                </a>
+                <a href="#doceria">
+                    <li>Doceria</li>
+                </a>
+                <a href="#salsicharia">
+                    <li>Salsicharia</li>
+                </a>
+                <a href="#peixaria">
+                    <li>Peixaria</li>
+                </a>
+                <a href="#gelados">
+                    <li>Gelados</li>
+                </a>
+                <a href="#atendimento">
+                    <li>Atendimento ao Cliente</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class = "sessao">
+            <h2>Bem vindo!!</h2>
+            <p>Esse e o Hipermercado IOS, onde você encontra tudo que precisar!!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugiat aliquid soluta doloremque provident beatae odio molestias architecto, adipisci minus dolorum totam autem quidem quibusdam, similique ratione rem natus rerum.</p>
+        </section>
+        <article id="historia">
+            <h3>Sobre nós</h3>
+            <p>Nossa historia se iniciou em 1998, quando 5 amigos ao se juntarem em um mercado de esquina, perceberam que precisavam criar um mercado de qualidade que atenderia ao povo brasileiro</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, libero?</p>
+        </article>
+        <article id="padaria" class = "sessao">
+            <h2>Padaria</h2>
+            <p>Aqui, voce vai encontrar tudo para seu café da manhã e para o resto do dia! Temos todo tipo de pão, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, consequatur quisquam libero quae dolor commodi!</p>
+            <div class="galeria">
+                <div class="totem">
+                    <img src="assets/pao de milho.jpg" alt="Imagem Pao de Milho">
+                </div>
+                <div class="totem">
+                    <img src="assets/Pao de forma.jfif" alt="Imagem Pao de Forma">
+                </div>
+                <div class="totem">
+                    <img src="assets/Pao frances.jpg" alt="Imagem Pao Frances">
+                </div>
+            </div>
+        </article>
+        <article id="açougue" class = "sessao">
+            <h2>Açougue</h2>
+            <p>Aqui, voce vai encontrar todo tipo de carne pelo melhor preço do mercado!! Temos todo tipo de carne, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, consequatur quisquam libero quae dolor commodi!</p>
+            <div class="galeria">
+                <div class="totem">
+                    <img src="assets/Picanha.jpg" alt="Imagem picanha">
+                </div>
+                <div class="totem">
+                    <img src="assets/bife.jpg" alt="Imagem Bife">
+                </div>
+                <div class="totem">
+                    <img src="assets/fraudinha.jpg" alt="Imagem Fraudinha">
+            </div>
+        </article>
+        <article id="hortifruti" class = "sessao">
+            <h2>Hortifrutri</h2>
+            <p>Aqui, voce vai encontrar tudo para sua salada e para as outras refeições! Temos todo tipo de legume, vegetal, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, consequatur quisquam libero quae dolor commodi!</p>
+            <div class="galeria">
+                <div class="totem">
+                    <img src="assets/tomate.jpg" alt="Imagem Tomate">
+                </div>
+                <div class="totem">
+                    <img src="assets/pimentao.jpg" alt="Imagem Pimentão">
+                </div>
+                <div class="totem">
+                    <img src="assets/Alface.png" alt="Imagem Alface">
+            </div>
+        </article>
+        <article id="doceria" class = "sessao">
+            <h2>Doceria</h2>
+            <p>Aqui, voce vai encontrar o melhor doce para matar a vontade e curtir o resto do dia! Temos todo tipo de doce, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, consequatur quisquam libero quae dolor commodi!</p>
+            <div class="galeria">
+                <div class="totem">
+                    <img src="assets/Bolo.jpg" alt="Imagem Bolo">
+                </div>
+                <div class="totem">
+                    <img src="assets/brigadeiro.jpg" alt="Imagem Brigadeiro">
+                </div>
+                <div class="totem">
+                    <img src="assets/doce de leite.png" alt="Imagem Doce de Leite">
+            </div>
+        </article>
+        <article id="salsicharia" class = "sessao">
+            <h2>Salsicharia</h2>
+            <p>Aqui, voce vai encontrar tudo para seu café da manhã e para o resto do dia! Temos todo tipo de salsicha, linguiça e itens para seu churrasco, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, consequatur quisquam libero quae dolor commodi!</p>
+            <div class="galeria">
+                <div class="totem">
+                    <img src="assets/salsicha.jpeg" alt="Imagem salsicha">
+                </div>
+                <div class="totem">
+                    <img src="assets/linguiça.jpg" alt="Imagem linguiça">
+                </div>
+                <div class="totem">
+                    <img src="assets/pao de alho.jpg" alt="Imagem pao de alho">
+            </div>
+        </article>
+        <article id="peixaria" class = "sessao">
+            <h2>Peixaria</h2>
+            <p>Aqui, voce vai encontrar o melhor peixe para seu almoço ou janta! Temos todo tipo de peixes, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, consequatur quisquam libero quae dolor commodi!</p>
+            <div class="galeria">
+                <div class="totem">
+                    <img src="assets/atum.jpg" alt="Imagem Atum">
+                </div>
+                <div class="totem">
+                    <img src="assets/tilapia.jpg" alt="Imagem tilapia">
+                </div>
+                <div class="totem">
+                    <img src="assets/salmao.jfif" alt="Imagem salmão">
+            </div>
+        </article>
+        <article id="gelados" class = "sessao">
+            <h2>Gelados</h2>
+            <p>Aqui, voce vai encontrar todos os gelados para seu café da manha e para o resto do dia! Temos todo tipo de frios, Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, consequatur quisquam libero quae dolor commodi!</p>
+            <div class="galeria">
+                <div class="totem">
+                    <img src="assets/queijo.jpg" alt="Imagem queijo">
+                </div>
+                <div class="totem">
+                    <img src="assets/requeijao.jpeg" alt="Imagem requeijão">
+                </div>
+                <div class="totem">
+                    <img src="assets/presunto.jpg" alt="Imagem presunto">
+            </div>
+        </article>
+    </main>
+    <footer id="atendimento" class = "sessao">
+        <h3>Atendimento ao Cliente</h3>
+        <p>Ficou com alguma dúvida ou problema? Entre em contato conosco!</p>
+        <p>Envie seu email e entraremos em contato!</p>
+        <input type="email" name="" id="email">
+        <input type="button" value="enviar">
+        <p>&copy; Lucas Paz Guidi</p>
+    </footer>
+</body>
+</html>
