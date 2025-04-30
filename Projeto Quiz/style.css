@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container principal do quiz */
+#quiz-container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título da pergunta */
+#question {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Container das respostas */
+#answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+/* Botões de resposta */
+.container-answer {
+    background-color: #f1f1f1;
+    padding: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border: none;
+}
+
+.container-answer:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+}
+
+/* Botão de próximo */
+#next {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#next:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Feedback visual */
+button.correto {
+    background-color: #4CAF50 !important;
+    color: white;
+}
+
+button.errado {
+    background-color: #f44336 !important;
+    color: white;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    #answers {
+        grid-template-columns: 1fr;
+    }
+
+    #question {
+        font-size: 20px;
+    }
+
+    .container-answer {
+        font-size: 16px;
+        padding: 16px;
+    }
+}
