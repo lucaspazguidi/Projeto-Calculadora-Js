@@ -8,6 +8,11 @@ const perguntas = [
         pergunta:"Qual o maior time do Brasil?",
         opcoes:["Sao paulo", "Corinthians", "Flamengo","Palmeiras"],
         correta: "Corinthians"
+    },
+    {
+        pergunta:"Como nao ser corno?",
+        opcoes:["Trair", "Nao ser trouxa", "Trair, importante", "Pegar a mae"],
+        correta:"Pegar a mae"
     }
 ]
 
