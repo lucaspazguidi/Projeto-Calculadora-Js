@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,12 +11,12 @@
     <div id="quiz-container">
         <div id="question">Pergunta aqui</div>
         <div id="answers">
-          <!-- Opções de resposta são inseridas aqui via JS -->
+            <!-- As opções de resposta serão inseridas aqui via JS -->
         </div>
-        <button id="next">Próxima</button>
-      </div>
-      
-
+        <button class="next" id="botaoNext" style="display:none;">Próxima</button>
+        <button id="start" class="start">Iniciar Quiz</button>
+        <button id="restart" class="restart" style="display:none;">Reiniciar Quiz</button>
+    </div>
 
     <script src="main.js"></script>
 </body>
