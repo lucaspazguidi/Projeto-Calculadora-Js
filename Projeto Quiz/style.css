@@ -61,7 +61,7 @@ body {
 }
 
 /* Botão de próximo */
-#next {
+.next {
     background-color: #4CAF50;
     color: white;
     padding: 12px 28px;
@@ -75,6 +75,44 @@ body {
 
 #next:hover {
     background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Botão de iniciar */
+.start {
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.start:hover {
+    background-color: #0b7dda;
+    transform: scale(1.05);
+}
+
+/* Botão de reiniciar */
+.restart {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.restart:hover {
+    background-color: #e68900;
     transform: scale(1.05);
 }
 
