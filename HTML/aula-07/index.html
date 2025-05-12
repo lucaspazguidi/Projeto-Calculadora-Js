@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Totvs</title>
+</head>
+
+<body>
+    <center>
+        <h1>Formulário</h1>
+        <h2>Visita Totvs</h2>
+        <form action="" id="form" method="post">
+                <label for="nomeCompleto">Nome completo:</label>
+                <input id="nomeCompleto" type="text" required>
+                <br>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" required >
+                <br>
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" required>
+                <br>
+                <p>De que estado voce vem?</p>
+                <input type="radio" name="estado" id="sp" value="São Paulo">
+                <label for="sp">São Paulo</label>
+                <br>
+                <input type="radio" name="estado" id="mg" value="Minas Gerais">
+                <label for="mg">Minas Gerais</label>
+                <br>
+                <input type="radio" name="estado" id="rj" value="Rio de Janeiro">
+                <label for="rj">Rio de Janeiro</label>
+                <br>
+                <button type="submit">Enviar dados</button>
+                <br>
+                <button id="limpar">Limpar dados</button>
+        </form>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>

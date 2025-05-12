@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Pastel</title>
+</head>
+<body>
+    <h1>Formulário Pastel</h1>
+    <form action="" id="form" method="get">
+        <label for="">Selecione o sabor de pastel:</label>
+        <select name="pastel" id="pastel">
+            <option value="queijo">Queijo</option>
+            <option value="Calabresa">Calabresa</option>
+            <option value="Frango">Frango</option>
+            <option value="Mussarela">Mussarela</option>
+            <option value="Calabresa com Mussarela">Calabresa com mussarela</option>
+            <option value="Portuguesa">Portuguesa</option>
+        </select>
+        <datalist id="municipios">
+            <option value="São Paulo">Capital do estado, grande centro comercial</option>
+            <option value="Campinas">Cidade do interior, conhecida pela tecnologia</option>
+            <option value="Santos">Famosa pelo porto e pelas praias</option>
+            <option value="Sorocaba">Cidade com forte economia industrial</option>
+            <option value="São Bernardo do Campo">Parte do ABC Paulista, polo industrial</option>
+            <option value="Ribeirão Preto">Conhecida pela produção de cana-de-açúcar</option>
+            <option value="Bauru">Famosa por seu tradicional sanduíche</option>
+            <option value="Araraquara">Cidade universitária com grande desenvolvimento</option>
+            <option value="Piracicaba">Famosa pelo rio e a cultura de arroz</option>
+            <option value="São Carlos">Cidade com forte presença de universidades e pesquisa</option>
+        </datalist>
+        <br>
+        <label for="indicaMunicipio">Insira seu município abaixo</label>
+        <input type="text" name="indicaMunicipio" autocomplete="on" list="municipios"
+         id="indicaMunicipio">
+         <br>
+         <button type="submit">Enviar dados</button>
+    </form>
+</body>
+</html>
