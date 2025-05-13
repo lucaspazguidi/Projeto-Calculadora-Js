@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <style>
+        /* Ajustando o tamanho das imagens para ícones pequenos */
+        .skill-item img,
+        .project-item img,
+        .resume-image,
+        .whatsapp-img,
+        .social-icons img {
+            width: 40px;
+            /* Imagens menores como ícones */
+            height: 40px;
+        }
+
+        /* Imagem de desenvolvedor com tamanho reduzido */
+        #about img {
+            width: 100px;
+            /* Tamanho reduzido para imagem do desenvolvedor */
+            height: 100px;
+        }
+
+        /* Imagem do botão de enviar bem pequena */
+        form button img {
+            width: 20px;
+            /* Tamanho ajustado do ícone do botão */
+            height: 20px;
+        }
+
+        /* Imagens dos projetos ajustadas para "totens" clicáveis */
+        .project-item img {
+            max-width: 100%;
+            /* As imagens não vão ultrapassar 100% do seu tamanho original */
+            height: auto;
+            /* A altura será ajustada proporcionalmente */
+            width: 300px;
+            /* Defina um tamanho fixo que você gostaria para o tamanho máximo */
+        }
+
+        /* Ajustando as imagens das redes sociais */
+        .social-icons img {
+            width: 30px;
+            /* Tamanho ajustado para os ícones de redes sociais */
+            height: 30px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Hi, I'm Lucas </h1>
@@ -13,7 +58,7 @@
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#follow">Follow Me</a></li>
@@ -22,60 +67,70 @@
     </header>
     <main>
         <section id="about">
-            <img src="#" alt="Image circle developer">
+            <img src="assets/developer-icon.png" alt="Image circle developer">
             <p class="text">
-                Hello, my name is Lucas Paz Guidi and I am 16 years old. I am a student at the Federal Institute of São Paulo, where I am deepening my knowledge in technology and programming. I developed a great passion for programming at the age of 12, and since then, I have dedicated my time to learning new languages, techniques, and tools that help me create innovative and efficient solutions.
-                Over these years of study, I have worked with various technologies, especially in web development, and I am continuously looking to improve my skills. My dream is to make programming my career and to live from it, contributing to the creation of systems and products that can positively impact people's lives.
-                Currently, I am seeking an opportunity in the Information Technology (IT) industry, where I can apply my knowledge, learn from industry professionals, and contribute to challenging projects. I am particularly interested in front-end and back-end development, but I am also fascinated by new technologies such as artificial intelligence and automation.
-                I believe in the power of programming to transform the world, and I am ready to be part of that transformation. My goal is to work on projects that not only enhance my technical skills but also contribute to creative and impactful solutions in the IT market.
+                Hello, my name is Lucas Paz Guidi and I am 16 years old. I am a student at the Federal Institute of São
+                Paulo, where I am deepening my knowledge in technology and programming. I developed a great passion for
+                programming at the age of 12, and since then, I have dedicated my time to learning new languages,
+                techniques, and tools that help me create innovative and efficient solutions.
+                Over these years of study, I have worked with various technologies, especially in web development, and I
+                am continuously looking to improve my skills. My dream is to make programming my career and to live from
+                it, contributing to the creation of systems and products that can positively impact people's lives.
+                Currently, I am seeking an opportunity in the Information Technology (IT) industry, where I can apply my
+                knowledge, learn from industry professionals, and contribute to challenging projects. I am particularly
+                interested in front-end and back-end development, but I am also fascinated by new technologies such as
+                artificial intelligence and automation.
+                I believe in the power of programming to transform the world, and I am ready to be part of that
+                transformation. My goal is to work on projects that not only enhance my technical skills but also
+                contribute to creative and impactful solutions in the IT market.
             </p>
         </section>
         <section id="skills">
             <div class="skills-list">
                 <div class="skill-item">
-                    <img src="#" alt="HTML">
+                    <img src="assets/html_1051277.png" alt="HTML">
                     <h3>HTML</h3>
                     <p>Markup language used for structuring web pages.</p>
                 </div>
-        
+
                 <div class="skill-item">
-                    <img src="# alt="CSS">
+                    <img src="assets/css-3_732190.png" alt="CSS">
                     <h3>CSS</h3>
                     <p>Style sheet language used for describing the presentation of a web page.</p>
                 </div>
-        
+
                 <div class="skill-item">
-                    <img src="#" alt="GitHub">
+                    <img src="assets/github.png" alt="GitHub">
                     <h3>GitHub</h3>
                     <p>Platform for version control and collaboration using Git.</p>
                 </div>
-        
+
                 <div class="skill-item">
-                    <img src="#" alt="Git">
+                    <img src="assets/git.png" alt="Git">
                     <h3>Git</h3>
                     <p>Version control system for tracking changes in source code.</p>
                 </div>
-        
+
                 <div class="skill-item">
-                    <img src="#" alt="Python">
+                    <img src="assets/python.png" alt="Python">
                     <h3>Python</h3>
                     <p>High-level programming language for general-purpose programming.</p>
                 </div>
-        
+
                 <div class="skill-item">
-                    <img src="#" alt="JavaScript">
+                    <img src="assets/js.png" alt="JavaScript">
                     <h3>JavaScript</h3>
                     <p>Programming language used to create dynamic and interactive web content.</p>
                 </div>
-        
+
                 <div class="skill-item">
-                    <img src="#" alt="C">
+                    <img src="assets/letter-c.png" alt="C">
                     <h3>C</h3>
                     <p>General-purpose programming language used for system programming.</p>
                 </div>
-        
+
                 <div class="skill-item">
-                    <img src="#" alt="MySQL">
+                    <img src="assets/mysql.png" alt="MySQL">
                     <h3>MySQL</h3>
                     <p>Relational database management system used for storing and managing data.</p>
                 </div>
@@ -85,42 +140,43 @@
             <div class="projects-list">
 
                 <div class="project-item">
-                    <img src="#" alt="Calculator">
+                    <img src="assets/Img - Calculadora.png" alt="Calculator">
                     <h3>Calculator</h3>
                     <p>A simple calculator made with HTML, CSS, and JavaScript.</p>
-                    <a href="link_to_calculator_project" target="_blank">View Project</a>
+                    <a href="https://lucaspazguidi.github.io/Calculadora/" target="_blank">View Project</a>
                 </div>
-        
+
                 <div class="project-item">
-                    <img src="path_to_quiz_image.jpg" alt="Quiz">
+                    <img src="assets/Img - quiz.png" alt="Quiz">
                     <h3>Quiz</h3>
                     <p>An interactive quiz with questions and answers, made with HTML, CSS, and JavaScript.</p>
-                    <a href="link_to_quiz_project" target="_blank">View Project</a>
+                    <a href="https://lucaspazguidi.github.io/Quiz-site/" target="_blank">View Project</a>
                 </div>
-        
+
                 <div class="project-item">
-                    <img src="path_to_todolist_image.jpg" alt="Todo List">
+                    <img src="assets/Img - Todo List.png" alt="Todo List">
                     <h3>Todo List</h3>
                     <p>A task management app created with HTML, CSS, and JavaScript.</p>
-                    <a href="link_to_todolist_project" target="_blank">View Project</a>
+                    <a href="https://lucaspazguidi.github.io/Todo-List/" target="_blank">View Project</a>
                 </div>
-        
+
                 <div class="project-item">
-                    <img src="path_to_website_image.jpg" alt="Website">
+                    <img src="assets/Img - site.png" alt="Website">
                     <h3>Website</h3>
                     <p>A simple portfolio website developed with HTML, CSS, and JavaScript.</p>
-                    <a href="link_to_website_project" target="_blank">View Project</a>
+                    <a href="https://lucaspazguidi.github.io/projeto-android/" target="_blank">View Project</a>
                 </div>
             </div>
         </section>
         <section id="resume">
             <div class="resume-section">
                 <h2>My Resume</h2>
-                <img src="#" alt="Profile Image" class="resume-image">
+                <img src="assets/resume.png" alt="Profile Image" class="resume-image">
                 <p>
                     You can download my resume in PDF format using the link below.
                 </p>
-                <a href="path_to_resume_pdf.pdf" target="_blank" class="download-btn" download>Download My Resume</a>
+                <a href="Resume/2025.01_CV_LUCAS PAZ GUIDI.pdf" target="_blank" class="download-btn" download>Download
+                    My Resume</a>
             </div>
         </section>
     </main>
@@ -128,10 +184,11 @@
         <section id="contact">
             <div class="contact-section">
                 <h2>Contact Me</h2>
-                <p>If you have any questions or would like to get in touch, feel free to send a message to the email provided below.</p>
+                <p>If you have any questions or would like to get in touch, feel free to send a message to the email
+                    provided below.</p>
                 <p class="highlight-email">lucaspazguidi@hotmail.com</p>
                 <div class="whatsapp-container">
-                    <img src="#" alt="WhatsApp Logo" class="whatsapp-img">
+                    <img src="assets/Whats.png" alt="WhatsApp Logo" class="whatsapp-img">
                     <br>
                     <a href="https://www.whatsapp.com/" target="_blank" class="whatsapp-btn">Contact via WhatsApp</a>
                 </div>
@@ -140,24 +197,33 @@
         <section id="follow">
             <div class="follow-section">
                 <h2>Follow Me</h2>
-                <p>If you want to stay updated with my work and projects, feel free to follow me on my social media channels below!</p>
-                
+                <p>If you want to stay updated with my work and projects, feel free to follow me on my social media
+                    channels below!</p>
+
                 <div class="social-icons">
-                  <a href="https://www.instagram.com/seu_usuario" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
-                  </a>
-            
-                  <a href="https://www.linkedin.com/in/seu_usuario" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-                  </a>
-            
-                  <a href="https://github.com/seu_usuario" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub">
-                  </a>
+                    <a href="https://www.instagram.com/lucaas.dt/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/lucas-paz-guidi-940956316/" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                    </a>
+
+                    <a href="https://github.com/lucaspazguidi" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub">
+                    </a>
                 </div>
-              </div>
-            
+            </div>
+            <form action="" method="post">
+                <p>Do you have any questions or want to get in touch? <br> Send us an email!</p>
+                <label for="nome">Name:</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <button type="submit"><img src="assets/enviar.png" alt="enviar"></button>
+            </form>
         </section>
     </footer>
 </body>
+
 </html>
